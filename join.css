@@ -1,0 +1,46 @@
+.join-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+h1 span{
+    font-size: 1.5em;
+    color: lightcoral;
+}
+
+.join-input-group{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(240, 9%, 15%, .50);
+    padding: 5rem;
+    border-radius: 10px;
+    width: 40vw;
+}
+label{
+    margin-bottom: .7rem;
+}
+input{
+    margin-bottom: 1rem;
+    background: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(105, 103, 103, .5);
+    padding: .5em;
+    color: white;
+}
+input:hover, input:focus{
+    border: 2px solid rgb(90, 71, 90, 10);
+}
+
+@media (max-width: 630px){
+    .join-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .join-input-group{
+        width: 90vw;
+    }
+}
